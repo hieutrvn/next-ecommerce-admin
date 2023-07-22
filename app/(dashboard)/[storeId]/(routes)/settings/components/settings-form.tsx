@@ -14,10 +14,10 @@ import { useParams, useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Heading } from "@/components/ui/heading";
+import { ApiAlert } from "@/components/ui/api-alert";
 import { Separator } from "@/components/ui/separator";
 import { AlertModal } from "@/components/modals/alert-modal";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { ApiAlert } from "@/components/ui/api-alert";
 
 interface SettingsFormProps {
     initialData: Store

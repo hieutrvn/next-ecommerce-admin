@@ -4,10 +4,9 @@ import * as z from "zod";
 import axios from "axios";
 import { useState } from "react";
 import { Trash } from "lucide-react";
+import { Size } from "@prisma/client";
 import { toast } from "react-hot-toast";
 import { useForm } from "react-hook-form";
-import { Size } from "@prisma/client";
-import { useOrigin } from "@/hooks/use-origin";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useParams, useRouter } from "next/navigation";
 
@@ -15,7 +14,6 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Heading } from "@/components/ui/heading";
 import { Separator } from "@/components/ui/separator";
-import ImageUpload from "@/components/ui/image-upload";
 import { AlertModal } from "@/components/modals/alert-modal";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 
