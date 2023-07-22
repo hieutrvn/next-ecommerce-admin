@@ -51,7 +51,7 @@ export async function POST(
     }
     catch (error) {
         console.log('[CATEGORIES_POST]', error)
-        return new NextResponse('Interal error', { status: 500 })
+        return new NextResponse('Internal error', { status: 500 })
     }
 }
 
@@ -75,6 +75,6 @@ export async function GET(
     }
     catch (error) {
         console.log('[CATEGORIES_GET]', error)
-        return new NextResponse('Interal error', { status: 500 })
+        return new NextResponse('Internal error', { status: 500 })
     }
 }
